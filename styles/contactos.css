@@ -1,0 +1,158 @@
+body {
+    padding: 20px;
+    font-family: 'Roboto';
+    background: #eee;
+  }
+  body > h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #BBB;
+  }
+  .card {
+    margin: 0 auto;
+    width: 80%;
+    background: #e6e6e6;
+    border-radius: 4px;
+    position: relative;
+  }
+  .card .header {
+    background: white;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.26);
+    padding: 24px 24px 12px 24px;
+  }
+  .card .content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .card .content > div {
+    padding: 0 24px;
+    background: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.26);
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+  }
+  .card .content > div:first-child .section-name {
+    border-top: 1px solid #eee;
+  }
+  .card .content > div:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  .card .content > div.raised {
+    margin: 12px -24px;
+    padding: 24px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+    border-radius: 4px;
+  }
+  .card .content > div.raised .section-name {
+    padding-top: 0;
+    border-top: none;
+  }
+  .card .content > div.raised .info,
+  .card .content > div.raised .form-container {
+    display: block;
+    height: auto;
+    padding: 24px 0 0 0;
+  }
+  .card .content > div span.section-name {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  .card .content > div .info,
+  .card .content > div .form-container {
+    display: none;
+    height: 0;
+    position: relative;
+  }
+  .card .section-name {
+    font-size: 1.3em;
+    padding: 12px 0;
+  }
+  .card span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .card label {
+    position: absolute;
+    top: 12px;
+    font-size: 0.75em;
+    color: gray;
+  }
+  .card .add-new-panel {
+    display: none;
+    height: 0;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.26);
+    padding: 24px;
+    background: white;
+  }
+  .card .add-new-panel.active {
+    display: block;
+    height: auto;
+  }
+  .card .add-new-panel .form-container {
+    margin-top: 8px;
+  }
+  .card .add-new-panel .form-container input {
+    width: 96%;
+    margin-top: 12px;
+    padding: 12px 12px 4px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    font-size: 1.2em;
+  }
+  .card .add-new-panel .form-container .btn-container {
+    margin-top: 24px;
+    height: 28px;
+  }
+  .card .add-new-panel .form-container .btn-container div {
+    float: right;
+    padding: 8px;
+  }
+  .card .button {
+    cursor: pointer;
+  }
+  .card .button.add {
+    background: orange;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.26);
+    position: absolute;
+    right: 20px;
+    top: 88px;
+    z-index: 999px;
+    opacity: 0;
+  }
+  .card .button.add.active {
+    opacity: 1;
+  }
+  .card .button.add::before {
+    content: '+';
+    font-size: 48px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    left: 14px;
+  }
+  .card .button.add span {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+  }
+  a:link { text-decoration: none;
+  }
+  a:visited {
+  text-decoration: none;
+  }  

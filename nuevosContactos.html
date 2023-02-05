@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nuevosContactos.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="links" id="myLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="nuevosContactos.html">Nuevos contactos</a></li>
+            <li><a href="Favoritos.html">Favoritos</a></li>
+            <li><a href="perfil.html">Perfil de usuario</a></li>
+            <li><a href="lista.html">Lista</a></li>
+            <li class="icon">
+                <a href="#" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+    <form action="action_page.php">
+
+        <label for="fname">Primer Nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="Su nombre">
+
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="lastname" placeholder="Su apellido">
+
+        <label for="lname">Correo</label>
+        <input type="text" id="correo" name="correo" placeholder="Su correo">
+
+        <label for="lname">Numero telefonico</label>
+        <input type="text" id="num" name="num" placeholder="Su numero telefonico">
+        
+        <label for="subject">Comentarios</label>
+        <textarea id="subject" name="subject" placeholder="Escribe un comentario" style="height:100px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    </div>
+    <script src="js/navrbar.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contactos.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="js/contactos.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="links" id="myLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="nuevosContactos.html">Nuevos contactos</a></li>
+            <li><a href="Favoritos.html">Favoritos</a></li>
+            <li><a href="perfil.html">Perfil de usuario</a></li>
+            <li><a href="lista.html">Lista</a></li>
+            <li class="icon">
+                <a href="#" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br>
+
+    <div class="card">
+        <div class="header">
+            <h1>Lista de contactos</h1>
+        </div>
+
+        <div class=content>
+            <div class="add-new-panel">
+                <span class="section-name">Add A New Contact</span>
+                <div class="form-container">
+                    <span>
+                        <label>Name</label>
+                        <input type="text" />
+                    </span>
+                    <span>
+                        <label>Mobile</label>
+                        <input type="text" />
+                    </span>
+                    <span>
+                        <label>Email</label>
+                        <input type="email" />
+                    </span>
+                    <div class="btn-container">
+                        <div class="primary button" id="confirm-btn">Confirm</div>
+                        <div class="secondary button" id="cancel-btn">Cancel</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="section-name" href="detallesF.html" style="color: black;">Fabian Herrera </a>   
+            </div>
+            
+            <div>
+                <a class="section-name" href="detallesP.html" style="color: black;">Pablo Cortez</a>               
+            </div>
+            
+            <div>
+                <a class="section-name" href="detallesJ.html " style="color: black;">Jose Mendez</a>
+            
+            <div>
+                <a class="section-name" href="detallesW.html"style="color: black;">Walter Garcia</a>
+            </div>
+            <div>
+                <a class="section-name" href="detallesS.html"style="color: black;">Stefan Paco</a>
+            </div>
+        </div>
+        <a class="button add active" href="nuevosContactos.html" ><span>Add a new contact</span></a>
+    </div>
+    
+    <script src="./js/contactos.js"></script>
+    <script src="js/navrbar.js"></script>
+</body>
+
+</html>
